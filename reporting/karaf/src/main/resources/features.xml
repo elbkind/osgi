@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
+
+  <!-- features:refreshurl mvn:com.nextaudience.clustor/sampler-base/${project.version}/xml -->
+
+  <feature name='eu.elbkind.osgi.reporting.karaf'
+    version='${project.version}'>
+    <bundle>mvn:eu.elbkind.osgi/reporting-api/${project.version}</bundle>
+    <bundle>mvn:eu.elbkind.osgi/reporting-karaf-commands/${project.version}</bundle>
+  </feature>
+</features>
