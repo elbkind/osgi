@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-  <groupId>eu.elbkind.osgi</groupId>
-  <artifactId>reporting</artifactId>
+    <groupId>eu.elbkind.osgi</groupId>
+    <artifactId>reporting</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>reporting-karaf-commands</artifactId>
@@ -21,14 +20,14 @@
       <groupId>org.apache.karaf.shell</groupId>
       <artifactId>org.apache.karaf.shell.console</artifactId>
     </dependency>
-     <dependency>
-        <groupId>org.osgi</groupId>
-        <artifactId>org.osgi.core</artifactId>
-      </dependency>
-      <dependency>
-        <groupId>org.osgi</groupId>
-        <artifactId>org.osgi.compendium</artifactId>
-      </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${project.artifactId}</finalName>
@@ -57,17 +56,12 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Import-Package>
-              org.apache.felix.service.command;version="[0.6,1)",
-              org.apache.felix.gogo.commands;version="[0.6,1)",
-              org.apache.karaf.shell.console;version="[2.2,4)",
-              *
-            </Import-Package>
+            <Import-Package>org.apache.felix.service.command;version="[0.6,1)", org.apache.felix.gogo.commands;version="[0.6,1)", org.apache.karaf.shell.console;version="[2.2,4)", *</Import-Package>
             <Bundle-Version>${project.version}</Bundle-Version>
           </instructions>
         </configuration>
       </plugin>
-            <plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
         <executions>
@@ -88,7 +82,14 @@
           </execution>
         </executions>
       </plugin>
-
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
     </plugins>
   </build>
 </project>
