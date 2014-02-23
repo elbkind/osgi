@@ -3,6 +3,17 @@ package eu.elbkind.osgi.reporting.api;
 import java.io.PrintStream;
 import java.util.Arrays;
 
+/**
+ * Utility class to ease tabular output. Example:<br/>
+ * columns1   | column2 | column...<br/>
+ * -----------+---------+--------  <br/>
+ * row1 col1  | col2    |......    <br/>
+ * row2 col1  | col2    |......
+ *
+ *
+ * @author marvol
+ *
+ */
 public class ReportFormatter {
 
     private static final String[] BLANKS;

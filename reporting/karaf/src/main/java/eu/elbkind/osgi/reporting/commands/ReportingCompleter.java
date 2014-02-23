@@ -25,9 +25,9 @@ public class ReportingCompleter implements Completer {
             StringsCompleter delegate = new StringsCompleter();
             Collection<ServiceReference<Reporting>> result = this.bundleContext.getServiceReferences(Reporting.class, null);
             for (ServiceReference<Reporting> reference : result) {
-                Reporting monitor = this.bundleContext.getService(reference);
-                if(monitor != null) {
-                    delegate.getStrings().add(monitor.getId());
+                Reporting reporter = this.bundleContext.getService(reference);
+                if(reporter != null) {
+                    delegate.getStrings().add(reporter.getId());
                 }
             }
             return delegate.complete(buffer, cursor, candidates);

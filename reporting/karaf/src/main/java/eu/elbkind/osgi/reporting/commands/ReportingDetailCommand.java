@@ -12,6 +12,12 @@ import org.osgi.framework.ServiceReference;
 
 import eu.elbkind.osgi.reporting.api.Reporting;
 
+/**
+ * Queries the specified report.
+ *
+ * @author marvol
+ *
+ */
 @Command(scope = "${reporting.scope}", name = "report", description = "Dunp report.")
 public class ReportingDetailCommand extends OsgiCommandSupport {
 
@@ -20,22 +26,35 @@ public class ReportingDetailCommand extends OsgiCommandSupport {
 
     private BundleContext bundleContext;
 
+    private String colorOut;
+    private String colorErr;
+
+
     @Override
     public void setBundleContext(BundleContext bundleContext) {
         this.bundleContext = bundleContext;
     }
 
+    public void setColorOut(String colorOut) {
+        this.colorOut = String.format("\u001B[%sm", colorOut);
+    }
+
+    public void setColorErr(String colorErr) {
+        this.colorErr = String.format("\u001B[%sm", colorErr);
+    }
+
     @Override
     protected Object doExecute() throws Exception {
-        PrintStream out = System.out;
-        PrintStream err = System.err;
+        PrintStream out = new ColoredPrintStream(System.out, this.colorOut);
+        PrintStream err = new ColoredPrintStream(System.err, this.colorErr);
         report(out, err, this.bundleContext.getServiceReferences(Reporting.class, null));
 
         return null;
     }
 
     void report(PrintStream out, PrintStream err, Collection<ServiceReference<Reporting>> result) throws InvalidSyntaxException {
-        out.println();
+        out.print(this.colorOut);
+        err.print(this.colorErr);
         Reporting target = null;
 
         if (this.name != null) {
@@ -51,10 +70,10 @@ public class ReportingDetailCommand extends OsgiCommandSupport {
             }
         }
         if (target != null) {
-            out.printf("Monitor %s\n", this.name);
+            out.printf("Report %s\n", this.name);
             target.report(out, err);
         } else {
-            err.printf("Could not get reference to monitor named [%s]\n", this.name);
+            err.printf("Could not get reference to report named [%s]\n", this.name);
         }
 
         out.println();
