@@ -15,7 +15,7 @@ import eu.elbkind.osgi.reporting.api.Reporting;
 /**
  * Queries the specified report.
  *
- * @author marvol
+ * @author Mark Vollmann
  *
  */
 @Command(scope = "${reporting.scope}", name = "report", description = "Dunp report.")

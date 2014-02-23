@@ -11,7 +11,7 @@ import java.util.Arrays;
  * row2 col1  | col2    |......
  *
  *
- * @author marvol
+ * @author Mark Vollmann
  *
  */
 public class ReportFormatter {
@@ -42,6 +42,13 @@ public class ReportFormatter {
         this.defaultColumnWidth = defaultColumnSize;
     }
 
+    /**
+     * Prints a table
+     *
+     * @param out PrintStream to write to, not null
+     * @param headers Array of not null values
+     * @param rows Array of not null values, row length must always be headers length
+     */
     public void format(PrintStream out, String[] headers, String[]... rows) {
         int[] columnWidth = computeEachColumnWidth(this.defaultColumnWidth, headers, rows);
 

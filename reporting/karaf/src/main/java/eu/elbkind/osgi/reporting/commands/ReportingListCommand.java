@@ -19,7 +19,7 @@ import eu.elbkind.osgi.reporting.api.Reporting;
 /**
  * Lists all registered components with the {@link Reporting} interface.
  *
- * @author marvol
+ * @author Mark Vollmann
  */
 @Command(scope = "${reporting.scope}", name = "list", description = "List all reports.")
 public class ReportingListCommand extends OsgiCommandSupport {

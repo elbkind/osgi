@@ -12,7 +12,7 @@ import eu.elbkind.osgi.reporting.api.Reporting;
 /**
  * Activator that registers itself as {@link Reporting } component.
  *
- * @author marvol
+ * @author Mark Vollmann
  *
  */
 public class ReportingActivator implements BundleActivator, Reporting {
