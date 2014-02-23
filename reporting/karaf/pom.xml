@@ -7,7 +7,7 @@
   </parent>
   <artifactId>reporting-karaf-commands</artifactId>
   <packaging>bundle</packaging>
-  <name>Elbkind :: OSGI:: Reporting :: Karaf Commands</name>
+  <name>Elbkind :: OSGI :: Reporting :: Karaf Commands</name>
   <properties>
     <reporting.scope>reporting</reporting.scope>
   </properties>

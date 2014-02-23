@@ -7,7 +7,7 @@
   </parent>
   <artifactId>reporting-api</artifactId>
   <packaging>bundle</packaging>
-  <name>Elbkind :: OSGI:: Reporting :: API</name>
+  <name>Elbkind :: OSGI :: Reporting :: API</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

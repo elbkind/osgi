@@ -7,7 +7,7 @@
   </parent>
   <artifactId>reporting-example</artifactId>
   <packaging>bundle</packaging>
-  <name>Elbkind :: OSGI:: Reporting :: Example</name>
+  <name>Elbkind :: OSGI :: Reporting :: Example</name>
   <dependencies>
     <dependency>
       <groupId>eu.elbkind.osgi</groupId>

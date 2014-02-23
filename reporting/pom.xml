@@ -9,7 +9,7 @@
   <artifactId>reporting</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Elbkind :: OSGI:: Reporting</name>
+  <name>Elbkind :: OSGI :: Reporting</name>
   <description>Shell commands and api to enable objects to report information to the shell.</description>
   <modules>
     <module>api</module>
