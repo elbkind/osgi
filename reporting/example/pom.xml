@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>eu.elbkind.osgi</groupId>
-    <artifactId>reporting</artifactId>
+    <groupId>eu.elbkind</groupId>
+    <artifactId>osgi-reporting</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>reporting-example</artifactId>
+  <artifactId>osgi-reporting-example</artifactId>
   <packaging>bundle</packaging>
   <name>Elbkind :: OSGI :: Reporting :: Example</name>
   <dependencies>
     <dependency>
-      <groupId>eu.elbkind.osgi</groupId>
-      <artifactId>reporting-api</artifactId>
+      <groupId>eu.elbkind</groupId>
+      <artifactId>osgi-reporting-api</artifactId>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>

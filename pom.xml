@@ -6,10 +6,11 @@
     <artifactId>oss-parent</artifactId>
     <version>7</version>
   </parent>
-  <artifactId>osgi</artifactId>
+  <groupId>eu.elbkind</groupId>
+  <artifactId>osgi-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Elbkind :: OSGI:: parent</name>
+  <name>Elbkind :: OSGI:: Parent</name>
   <description>Collection of osgi utilities</description>
   <modules>
     <module>reporting</module>
@@ -54,8 +55,8 @@
         <version>${osgi.version}</version>
       </dependency>
       <dependency>
-        <groupId>eu.elbkind.osgi</groupId>
-        <artifactId>reporting-api</artifactId>
+        <groupId>eu.elbkind</groupId>
+        <artifactId>osgi-reporting-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
