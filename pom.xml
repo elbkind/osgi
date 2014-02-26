@@ -57,17 +57,17 @@
       <dependency>
         <groupId>eu.elbkind</groupId>
         <artifactId>osgi-reporting-api</artifactId>
-        <version>0.0.1-S</version>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>eu.elbkind</groupId>
         <artifactId>osgi-karaf-commands</artifactId>
-        <version>0.0.1-S</version>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>eu.elbkind</groupId>
         <artifactId>osgi-reporting-example</artifactId>
-        <version>0.0.1-S</version>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
