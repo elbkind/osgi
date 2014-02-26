@@ -5,7 +5,7 @@
     <artifactId>osgi-reporting</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>reporting-karaf-commands</artifactId>
+  <artifactId>osgi-reporting-karaf-commands</artifactId>
   <packaging>bundle</packaging>
   <name>Elbkind :: OSGI :: Reporting :: Karaf Commands</name>
   <properties>

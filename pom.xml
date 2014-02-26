@@ -61,7 +61,7 @@
       </dependency>
       <dependency>
         <groupId>eu.elbkind</groupId>
-        <artifactId>osgi-karaf-commands</artifactId>
+        <artifactId>osgi-reporting-karaf-commands</artifactId>                   
         <version>0.0.1-SNAPSHOT</version>
       </dependency>
       <dependency>
