@@ -6,6 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>osgi-reporting-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Elbkind :: OSGI :: Reporting :: API</name>
   <properties>
