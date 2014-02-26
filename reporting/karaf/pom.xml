@@ -3,10 +3,10 @@
   <parent>
     <groupId>eu.elbkind</groupId>
     <artifactId>osgi-reporting</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>osgi-reporting-karaf-commands</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>Elbkind :: OSGI :: Reporting :: Karaf Commands</name>
   <properties>
@@ -16,7 +16,7 @@
     <dependency>
       <groupId>eu.elbkind</groupId>
       <artifactId>osgi-reporting-api</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.apache.karaf.shell</groupId>

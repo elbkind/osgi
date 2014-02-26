@@ -4,10 +4,10 @@
   <parent>
     <groupId>eu.elbkind</groupId>
     <artifactId>osgi-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>osgi-reporting</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Elbkind :: OSGI :: Reporting</name>
   <description>Shell commands and api to enable objects to report information to the shell.</description>
