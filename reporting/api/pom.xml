@@ -3,10 +3,10 @@
   <parent>
     <groupId>eu.elbkind</groupId>
     <artifactId>osgi-reporting</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>osgi-reporting-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>bundle</packaging>
   <name>Elbkind :: OSGI :: Reporting :: API</name>
   <properties>
